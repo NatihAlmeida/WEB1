@@ -14,6 +14,17 @@
         background-color: rgb(218, 230, 240); 
     } 
 
+    table, td, th { 
+        border: 1px solid black; 
+        border-collapse: collapse; 
+        border-radius: 20% 50% 10% 30%; 
+    } 
+
+    #padodealho { 
+        background-color: coral; 
+
+    } 
+
 </style> 
 </head>
 
@@ -42,6 +53,35 @@
             <li> João</li> 
             <li> Gabriel</li> 
         </ol> 
+
+        <table> 
+            <tr>
+                <td rowspan="5">Churrasco</td>
+                <td>Item</td>
+                <td>Valor</td>
+                <td>Unidade</td>
+            </tr>
+            <tr> 
+                <td>grãodebico</td> 
+                <td>500g</td> 
+                <td>15,00</td> 
+            </tr> 
+            <tr> 
+                <td id="padodealho">pao de alho</td> 
+                <td>2 pacotes</td> 
+                <td>15,00</td> 
+            </tr> 
+            <tr>
+                <td>Proteina de Soja Grauda</td>
+                <td>300g</td>
+                <td>9,36</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>60,00</td>
+            </tr>
+        </table> 
+
     </div> 
 </body>
 </html>
