@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. Formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário</h1>
+        <!-- action define o destino dos dados do formulário -->
+        <form action="" method="get">
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"> 
+            <br>
+            <label for="login">E-mail:</label>
+            <input type="text" id="login" name="login" value="Insira seu e-mail aqui"> 
+            <br>
+            <label for="pass">Senha:</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <label for="confirmpass">Confirmar Senha:</label>
+            <input type="password" id="confirmpass" name="confirmpass">
+            <br>
+            <h2>Termos de Serviço</h2>
+            <input type="checkbox" id="aceito" name="aceito" value="aceito">
+            <label for="aceito">Eu concordo com os termos de condições e de serviços desta página.</label>
+            <br><br>
+            <label for="estados"> Selecione um estado da região sul ou sudeste:</label>
+            <select name="estados" id="estados">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Espiríto Santo">Espiríto Santo</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+            </select>
+
+            <p>Selecione seu genero:</p>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label> 
+            <br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio" id="outros" name="genero" value="outros">
+            <label for="outros">Outros</label>
+            <br>
+            <br>
+            <input type="submit" id="Enviar" name="Enviar" value="Enviar">
+        </form>
+    </div>
+    
+</body>
+</html>
