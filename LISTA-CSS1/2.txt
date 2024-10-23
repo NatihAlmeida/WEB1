@@ -1,0 +1,13 @@
+Lista CSS
+Exercicio 2 
+
+Os seletores servem para selecionar os elementos HTML que desejamos estilizar e funcionam de acordo com a especificidade da regra CSS. O seletor que é considerado e aplicado a regra CSS, é aquele obtiver a regra mais especifica para um determinado elemento.
+
+Os seletores podem ser divididos nas cinco categorias abaixo: 
+Documentação oficial: https://www.w3schools.com/css/css_selectors.asp
+
+- Seletores simples: selecionam elementos com base no nome, id, classe.
+- Seletores combinadores: selecionam elementos com base em um relacionamento específico entre eles.
+- Seletores de pseudoclasse: selecionam elementos com base em um determinado estado.
+- Seletores de pseudoelementos: selecionam e estilizam uma parte de um elemento.
+- Seletores de atributos: selecionam elementos com base em um atributo ou valor de atributo.
