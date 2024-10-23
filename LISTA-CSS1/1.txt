@@ -1,0 +1,17 @@
+Lista CSS 
+Exercicio 1
+    
+Regra CSS é a declaração de propriedades de estilo que define como os elementos de uma página web devem ser apresentados.
+
+Exemplo de uma regra CSS:
+
+    p {
+        background-color: aqua;
+    }
+        
+    Neste exemplo acima, o elemento p é um seletor que tem como objetivo apontar para o elemento específico que queremos estilizar.
+
+    Toda declaração CSS tem uma propriedade e um valor, neste exemplo acima a nossa propriedade declarada é o background-color que especifica a cor de fundo de um elemento, no caso o nosso elemento p declarado.
+    E o valor escolhido é aqua, que é a cor definida da nossa propriedade background-color.
+    
+    </p>
