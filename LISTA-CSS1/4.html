@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Exemplo de CSS Externo aplicado:-->
+    <link rel="stylesheet" href="4.css">
+    <title>Exercicio 4</title>
+    
+    <!--Exemplo de CSS Interno/Incorporado aplicado:-->
+    <style>
+        .paragrafo-css-interno{
+            color: goldenrod;
+            font-family: 'Times New Roman'
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas de aplicar CSS no documento HTML:</h1>
+    
+    <!-- CSS Inline aplicado:-->
+    <p style="color: purple;"><b>CSS Inline:</b><br>Inline é uma forma direta de aplicar CSS no documento HTML. (Este paragrafo foi estilizado através do CSS Inline com a cor roxa.)</p>
+
+
+    <p class="paragrafo-css-interno"><b>CSS Interno ou Incorporado:</b><br>É como se fosse aplicar o CSS através de uma sessão, no caso é aplicado através da tag style dentro da tag head. (Este paragrafo foi estilizado através do CSS Interno especificado dentro da tag head com cor: goldenrod e fonte: times new roman.)</p>
+
+    <p class="paragrafo-css-externo"><b>CSS Externo:</b><br> E este aqui, o CSS é aplicado de maneira externa através de um link que direciona para um arquivo externo, ou seja, é aplicado de forma separada no arquivo externo. (Este paragrafo foi estilizado através do CSS Externo especificado através do link na tag head que referencia o arquivo externo 4.css). </p>
+
+</body>
+</html>
