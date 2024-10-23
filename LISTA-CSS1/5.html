@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi <p>Na fruta abacaxi foi aplicado a cor yellow da regra 1 especificando o elemento li e não há seletor para o #lip0</p></li>
+
+   <!--item 2--> <li           class="fruta">Melão <p>Foi aplicado a cor gray no melão conforme a especificidade de classe que é mais especifica que o seletor por elemento da regra1</p></li>
+
+   <!--item 3--> <li id="lip2" class="fruta">Pera <p>Na Pera foi definido a cor como azul, pois o seletor por id é mais especifico que o seletor por elemento da regra1 e o seletor por classe na regra3</p></li>
+
+   <!--item 4--> <li id="lip3" class="fruta">Uva <p>Foi definido com a cor orange da regra, pois o seletor está definido por uma combinação de seletor por id com seletor de classe, que é mais especifica que os demais seletores.</p></li>
+
+   <!--item 5--> <li id="lip4" class="fruta">Maçã <p>Maça ficou com a cor gray pelo seletor de class da regra3 e não há seletor para o #lip4 </p></li>
+
+   <!--item 6--> <li           class="churras">Carne <p>A carne está com a cor black referente a regra4 que possui a combinação de seletor por elemento e por classe que é mais especifico que as demais regras, por ser uma classe com nome diferente combinada com li sendo assim mais especifica. As demais regras não possuem está combinação.</p></li>
+
+   <!--item 7--> <li           class="churras">Linguiça <p>Já para a opção linguiça, segue-se o mesmo padrão da opção carne mencionada no item 6 acima. Conforme a regra4 que possui a combinação de seletor por elemento com seletor de classe</p></li>
+
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho <p>O Pão de alho está definido com a cor rosa devido a regra5 que tem o seletor por classe combinado com o atributo draggable que é um elemento para arrastar e soltar por exemplo um texto ou imagem. Devido a esta especificidade a cor pink tem prioridade sobre os demais seletores. </p></li>
+   </ol>   
+</body>
+</html>
