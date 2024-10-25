@@ -2,9 +2,14 @@ As formas de aplicar e exemplos dos 3 tipos de incorporação do CSS estão nos 
 
 O exercício 6 é semelhante ao exercício 4, com uma pergunta diferente que é sobre o impacto de cada metódo de desempenho e na organização do código referente aos diferentes tipos de aplicação do CSS - Inline, Interno e Externo.
 
-Respondendo sobre o impacto de cada metódo,  o CSS Inline que é uma forma dirente de aplicar estilização em elementos do HTML é fácil e rápido para pequenas alterações em um ou outro elemento de um projeto pequeno. Agora se for para um projeto grande não é tão interessante, porque o documento HTML vai ficar pesado e massante.
 
-Já referente ao CSS Interno que é aplicado através da tag <style> dentro do <heade>, também é interessante para projetos pequenos com uma página, pois é uma forma rápida de estilizar vários elementos num um único documento HTML. Já para projetos maiores, com duas ou mais páginas por exemplo, já não é viável, pois esse tipo de incorporação do CSS não serve para ser utilizado em outras páginas, se torna complicado e pode deixar as páginas mais lentas.
+Respondendo sobre o impacto de cada metódo:  
 
-E o CSS Externo, é interessante pois é aplicado em um arquivo externo com facilidade de alteração e pode ser reutilizado, além de melhorar o desempenho de várias páginas.
+CSS Inline que é uma forma dirente de aplicar estilização no documento HTML é fácil e rápido para pequenas alterações em um ou outro elemento de um projeto pequeno. Agora se for para um projeto grande não é tão legal, porque o documento HTML vai ficar pesado e massante.
+
+
+Referente ao CSS Interno que é aplicado através da tag <style> dentro do <head>. Para projetos pequenos com uma página é interessante e viável, pois é uma forma rápida de estilizar vários elementos num um único documento HTML. Já para projetos maiores, com duas ou mais páginas por exemplo não é bom. Então esse tipo de incorporação Interno não serve para ser utilizado em outras páginas porquê se torna complicado e pode deixar as páginas mais lentas.
+
+
+E o CSS Externo, é útil e muito bom, pois é aplicado em um arquivo externo facilitando por exemplo: a estilização de uma página específica ou diversos elementos em diferentes páginas, além de que pode ser reutilizado e contribui para o melhor desempenho de várias páginas.
 
