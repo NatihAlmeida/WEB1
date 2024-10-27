@@ -7,10 +7,16 @@
 <body>
     <h1>Exercicio 7 </h1>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         .box{
             height: 100px;
             width: 100px;
-            border: 10px groove darkviolet;            
+            border: 10px groove darkviolet; 
+            display: inline-block;           
         }
 
         #box1{
@@ -23,6 +29,7 @@
 
         #box3{
             background-color: greenyellow;
+            border-top: 8px dashed black;
         }
 
         #box4{
@@ -48,5 +55,8 @@
         <li>Foram criadas quatro divs de tamanho 100x100 com borda ranhurada em 3D de 10 pixels na cor violeta escuro</li>
         <li>Foi definido uma cor de fundo para cada div conforme a seguinte estilização: (#box1 - cor: fuchsia), (#box2 - cor: burlywood), (#box3 - cor:greenyellow) e para (#box4 - cor: cornflowerblue) </li>
         <li>Definimos a cor de fundo cinza para o body e estilizamos o body e html com borda dupla de 5 pixels na cor branca.</li>
+        <li>Os elementos body, html e divs foram alterados e não existem mais margens entre eles.</li>
+        <li>Definimos no layout da classe .box a função de display: inline-block que não possui quebra de linha e permite os elementos, no caso as nossas divs ficarem próximas uma das outras. </li>
+        <li>Foi alterado a cor e o estilo da borda de topo referente a div #box3</li>
     </ol>
 </html>
