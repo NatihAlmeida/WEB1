@@ -27,11 +27,19 @@
             padding: 20px;
         }
 
+        #box1:hover{
+            background-color: yellow;
+        }
+
         #box2{
             background-color: burlywood;
             border-radius: 5% 7% 0 0;
             outline: 6px inset yellow;
             margin: 20px;
+        }
+
+        #box2:hover{
+            transform: scale(2.0);
         }
 
         #box3{
@@ -50,6 +58,7 @@
             outline: 8px ridge yellow;
             margin: 40px;
             opacity: 0.5;
+            box-shadow: 50px 80px 35px rgb(189, 2, 173)
         }
 
         body{
@@ -82,5 +91,7 @@
         <li>Foi alterado o fundo da #box3 com grandiente linear de múltiplas cores: branco, verde, vermelho, azul e laranja.</li>
         <li>A div #box agora possui, padding de 20px.</li>
         <li>Alteramos o grau de opacidade da div #box4 para 0.5</li>
+        <li>Com a propriedade do pseudo-seletor :hover ao passar o mouse sobre a div #box1 podemos observar a alteração do fundo para amarelo e ao passar o mouse sobre a div #box2 podemos observar zoom que foi definido.</li>
+        <li>Utilizamos a propriedade box-shadow que define uma sombra para o elemento, nesse caso na div #box4, definimos  50px na horizontal, 80 px para a vertical e 35px referente ao raio de desfoque, deixando a sombra de cor roxa mais suave.</li>
     </ol>
 </html>
