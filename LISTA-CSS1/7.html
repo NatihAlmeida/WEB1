@@ -21,19 +21,28 @@
 
         #box1{
             background-color: fuchsia;
+            border-radius: 5%;
+            outline: 5px dotted greenyellow;
         }
 
         #box2{
             background-color: burlywood;
+            border-radius: 5% 7% 0 0;
+            outline: 6px inset yellow;
         }
 
         #box3{
             background-color: greenyellow;
             border-top: 8px dashed black;
+            outline: 3px outset orange;
         }
 
         #box4{
             background-color: cornflowerblue;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 100px;
+            outline: 8px ridge yellow;
         }
 
         body{
@@ -52,11 +61,15 @@
     <div class="box" id="box4">div-4</div>
 
     <ol type="a">
-        <li>Foram criadas quatro divs de tamanho 100x100 com borda ranhurada em 3D de 10 pixels na cor violeta escuro</li>
-        <li>Foi definido uma cor de fundo para cada div conforme a seguinte estilização: (#box1 - cor: fuchsia), (#box2 - cor: burlywood), (#box3 - cor:greenyellow) e para (#box4 - cor: cornflowerblue) </li>
+        <li>Foram criadas quatro divs de tamanho 100x100 com borda ranhurada em 3D de 10 pixels na cor violeta escuro.</li>
+        <li>Foi definido uma cor de fundo para cada div conforme a seguinte estilização: (#box1 - cor: fuchsia), (#box2 - cor: burlywood), (#box3 - cor:greenyellow) e para (#box4 - cor: cornflowerblue).</li>
         <li>Definimos a cor de fundo cinza para o body e estilizamos o body e html com borda dupla de 5 pixels na cor branca.</li>
         <li>Os elementos body, html e divs foram alterados e não existem mais margens entre eles.</li>
         <li>Definimos no layout da classe .box a função de display: inline-block que não possui quebra de linha e permite os elementos, no caso as nossas divs ficarem próximas uma das outras. </li>
-        <li>Foi alterado a cor e o estilo da borda de topo referente a div #box3</li>
+        <li>Foi alterado a cor e o estilo da borda de topo referente a div #box3.</li>
+        <li>Alteramos a borda da div #box1 para a borda arrendondada com 5% em todos os cantos.</li>
+        <li>Foram criadas bordas arrendodadas nos cantos superiores da div #box2, o canto superior esquerdo foi definido em 5% e o canto superior direito com 7%.</li>
+        <li>A div #box4 foi estilizada com a borda arrendoda para ser transformada em um círculo, alinhada com o texto no centro e com a altura da linha em 100 px igual a altura da div.</li>
+        <li>Foram criadas linhas de outline visível, um tipo para cada div.</li>
     </ol>
 </html>
