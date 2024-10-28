@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;             
+            }
+
+            .box{
+                display: inline-block;
+                width: 150px;
+                height: 150px;
+                position: fixed;
+               }
+               
+            #box1{
+                background-color: blue;
+            }
+    
+            #box2{
+                background-color: green;
+                right: 0;
+            }
+    
+            #box3{
+                background-color: red;
+                right: 0;
+                bottom: 0;
+            }
+            
+            #box4{
+                background-color: yellow;
+                left: 0;
+                bottom: 0;
+            }
+
+            #box5{
+                background-color: pink;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                
+            }
+    
+        </style>
+    </head>
+    <body>
+            <div class="box" id="box1">box1</div>
+            <div class="box" id="box2">box2</div>
+            <div class="box" id="box3">box3</div>
+            <div class="box" id="box4">box4</div>
+            <div class="box" id="box5">box5</div> 
+    </body>
+    </html>
