@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 span{
     display: inline-block;
     width: 30px;
@@ -17,30 +18,39 @@ span{
 #id1 span:nth-child(1){
     background-color: red;
 }
+
 #id2 span:nth-child(6){
     background-color: green;
 }
+
 #id3 span:nth-child(2){
     background-color: blue;
 }
+
 #id4 span:nth-child(5){
     background-color: palevioletred
 }
+
 #id5 span:nth-child(2n+1){
     background-color: yellow;
 }
+
 #id6 span:nth-child(2n){
     background-color: orange;
 }
+
 #id7 span:nth-child(4){
     background-color: pink;
 }
+
 #id8 span:nth-child(3n+2){
     background-color: brown;
 }
+
 #id9 span:nth-child(3n+1){
     background-color: gray;
 }
+
 #id10 span:nth-child(1n+4){
     background-color: purple;
 }
