@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 4</title>
     <style>
-        
+        #aleatorio{
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
 </head>
 
 <body>    
     <button type="button">Gerar Número Aleatório</button>
-    <p id="aleatorio">Número aleatório:</p>
+    <p id="aleatorio"></p>
 
     <script>
         const btn=document.querySelector("button");
@@ -23,6 +24,7 @@
 
             NumeroAleatorio.innerHTML = aleatorio;
             console.log(NumeroAleatorio);
+            aleatorio.innerHTML = "Número aleatório:" + NumeroAleatorio;
         });
     </script>
 </body>
