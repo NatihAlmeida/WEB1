@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button>Click em mim</button>
+
+
+    <script>
+        let contador=0;
+        let btn=document.querySelector("button");
+        btn.addEventListener("keypress",(evento)=>{
+            console.log(evento.key)
+            contador++;
+            btn.innerHTML=contador + evento.key + "KeyCode" +evento.keyCode
+        })
+    </script>
+</body>
+</html>
