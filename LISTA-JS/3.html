@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h2>Soma</h2>
+    <label for="">N1</label> 
+    <input type="text" id="numero1">
+    +
+    <label for="">N2</label>
+    <input type="text" id="numero2">
+
+    <button>Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        let btn=document.querySelector("button");
+
+        btn.addEventListener("click", ()=>{
+            let numero1=parseInt(document.getElementById("numero1").value);
+            let numero2=parseInt(document.getElementById("numero2").value);
+            let resultadoSoma = document.getElementById("resultado");
+
+            resultadoSoma.innerHTML = numero1 + numero2;
+            window.console.log(resultadoSoma);
+        })
+    </script>
+</body>
+</html>
