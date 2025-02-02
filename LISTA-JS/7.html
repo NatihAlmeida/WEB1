@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="umaString"></p>
+    <p id="umNumero"></p>
+    <p id="umBooleano"></p>
+    <p id="umArray"></p>
+    <p id="umObjeto"></p>
+
+    <script>
+        let palavraString = "Paz"
+        let numeroPreferido = 15;
+        let valorBooleano = true;
+        let sequenciaArray = [3,4,5];
+        let pessoaObjeto = {nome: "Maria", idade: 25};
+
+        function tipoDados(dado){
+            return typeof(dado);
+        }
+
+        console.log(tipoDados(palavraString));
+        console.log(tipoDados(numeroPreferido));
+        console.log(tipoDados(valorBooleano));
+        console.log(tipoDados(sequenciaArray));
+        console.log(tipoDados(pessoaObjeto));
+
+        document.getElementById("umaString").innerHTML = "String:" + " " + palavraString;
+        document.getElementById("umNumero").innerHTML = "Número:" + " " + numeroPreferido;
+        document.getElementById("umBooleano").innerHTML = "Booleano:" + " " + valorBooleano;
+        document.getElementById("umArray").innerHTML = "Array:" + " " + sequenciaArray;
+        document.getElementById("umObjeto").innerHTML = "Objeto:" + " " + pessoaObjeto;
+
+    </script>
+</body>
+</html>
