@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <label for="">Mínimo:</label><br>
+    <input type="text" name="min" id="min"> <br><br>
+
+    <label for="">Máximo:</label><br>
+    <input type="text" name="max" id="max"><br><br>
+
+    <button type="button">Gerar Número Aleatório</button>
+    <p id="aleatorio"></p>
+    
+    <script>
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", ()=>{
+            const mínimo = parseInt(document.querySelector("#min").value);
+            const máximo = parseInt(document.querySelector("#max").value);
+            const NumeroAleatorio = Math.floor(Math.random() * (máximo - mínimo
+             + 1)) + mínimo;
+
+            console.log(NumeroAleatorio);
+            aleatorio.innerHTML = "Número Aleatório:" + NumeroAleatorio;
+            
+        });
+    </script>
+</body>
+</html>
