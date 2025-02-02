@@ -1,0 +1,4 @@
+Exercício 6
+
+O primeiro código funciona corretamente, mas o segundo código apresentado dá problema na execução pois o script foi colocado na sessão <head> antes do elemento <div> que está no body. 
+Então, quando o DOM é carregado, ele tenta executar o script referente ao id=output e não consegue encontrar porquê o elemento <div> não existe, isso acontece porquê o elemento <div> foi declarado depois do script no <body>
