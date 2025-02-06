@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+    <style>
+        button{
+                display: inline-block;
+                position: fixed;
+                background: rgb(207, 205, 205);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarCor()"> Alterar Cor de Fundo</button>
+    <script>
+        function mudarCor(){
+            const red = Math.floor(Math.random()*256);
+            const green = Math.floor(Math.random()*256);
+            const blue = Math.floor(Math.random()*256);
+
+            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`; 
+        }
+    </script>
+</body>
+</html>
