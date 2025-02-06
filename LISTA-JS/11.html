@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <style>
+        button{
+            display: inline-block;
+            position: fixed;
+            margin: 20px;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sorteio()">Sortear Número Aleatório</button> <br><br>
+    <ul id="listaSorteio"></ul>
+
+    <script>
+        const arrayNumSorteados = [];
+
+        function numeroAleatorio(minimo, maximo){
+            return Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+        }
+
+        function sorteio() {
+            const numero = numeroAleatorio(0, 100);
+            arrayNumSorteados.push(numero);
+        
+            const item = document.createElement('li');
+            item.innerText = numero;
+            document.querySelector("#listaSorteio").appendChild(item);
+        }
+    </script>
+</body>
+</html>
