@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="menu-calculadora">
+        <input type="text" id="display" readonly> 
+    <!--readonly - faz com que o usuário não possa escrever dentro da caixa-->
+        <br>
+        <button onclick="adicionarTela('7')">7</button>
+        <button onclick="adicionarTela('8')">8</button>
+        <button onclick="adicionarTela('9')">9</button>
+        <button class="operadores" onclick="adicionarTela('+')">/</button>
+        <br>
+        <button onclick="adicionarTela('4')">4</button>
+        <button onclick="adicionarTela('5')">5</button>
+        <button onclick="adicionarTela('6')">6</button>
+        <button class="operadores" onclick="adicionarTela('*')">*</button>
+        <br>
+        <button onclick="adicionarTela('1')">1</button>
+        <button onclick="adicionarTela('2')">2</button>
+        <button onclick="adicionarTela('3')">3</button>
+        <button class="operadores" onclick="adicionarTela('+')">+</button>
+        <br>
+        <button onclick="limparTela()">C</button>
+        <button onclick="adicionarTela('0')">0</button>
+        <button onclick="calcular()">=</button>
+        <button class="operadores" onclick="adicionarTela('-')">-</button>
+    </div>
+    
+    <script>
+        function adicionarTela(value) {
+            document.querySelector("#display").value += value;
+        }
+
+        function limparTela() {
+            document.querySelector("#display").value = "";
+        }
+        
+        function calcular() {
+            const entradaTela = document.querySelector("#display").value;
+            
+            //includes verifica se uma subtring especifica está presente.
+            if(entradaTela.includes("/") || entradaTela.includes("*") || entradaTela.includes("+") || entradaTela.includes("-")){
+
+                const calculoRetorno = eval(entradaTela);
+                document.querySelector("#display").value = calculoRetorno;
+            }                
+        }
+    </script>
+</body>
+</html>

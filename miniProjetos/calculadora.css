@@ -1,0 +1,33 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+#menu-calculadora {
+    background-color: rgb(185, 168, 157);
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+
+#display {
+    font-size: 23px;
+    text-align: right; 
+    border: 2px solid gainsboro;
+    border-radius: 10px; 
+    padding: 5px;
+    margin: 0 0 15px 0;
+}
+
+button {
+    width: 60px; 
+    height: 60px;  
+    margin: 5px;
+    border: none; 
+    border-radius: 10px;
+    font-size: 18px;
+    color: black; 
+}
