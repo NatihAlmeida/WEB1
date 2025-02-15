@@ -14,7 +14,7 @@
         <button onclick="adicionarTela('7')">7</button>
         <button onclick="adicionarTela('8')">8</button>
         <button onclick="adicionarTela('9')">9</button>
-        <button class="operadores" onclick="adicionarTela('+')">/</button>
+        <button class="operadores" onclick="adicionarTela('/')">/</button>
         <br>
         <button onclick="adicionarTela('4')">4</button>
         <button onclick="adicionarTela('5')">5</button>
@@ -46,7 +46,7 @@
             
             //includes verifica se uma subtring especifica está presente.
             if(entradaTela.includes("/") || entradaTela.includes("*") || entradaTela.includes("+") || entradaTela.includes("-")){
-
+            //eval converte um codigo javaScript que está representado como uma string.
                 const calculoRetorno = eval(entradaTela);
                 document.querySelector("#display").value = calculoRetorno;
             }                

@@ -1,0 +1,30 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    }
+
+.menu{
+    display: flex;  
+    font-size: 20px;
+}
+.tela-cronometro{
+    margin: 0 0 0 0;
+}
+#tela{
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.historico{
+    width: 300px;
+    height: 400px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    margin: 0 0 0 50px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+
+}
